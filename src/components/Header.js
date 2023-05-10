@@ -26,10 +26,10 @@ export const Title = () => (
     const cartItems = useSelector(store => store.cart.items);
 
     return (
-      <div className="flex justify-between place-items-center bg-white-50 shadow-lg ">
+      <div className="flex justify-between place-items-center bg-white-50 shadow-lg  ">
         <Title/>
       {/* <BrowserRouter> */}
-      <div className="nav-items">
+      <div className="nav-items mx-auto">
       <ul className="flex py-10"> 
 
        <Link to="/"> 
@@ -59,16 +59,19 @@ export const Title = () => (
 
       {/* using context anywhere  */}
       <span className="p-10 font-bold text-red-900"></span>
-
+      
+      <div className="space-x-2 gap-4" >
       {
         isLoggedIn ?   
-        (<button className=" bg-orange-400 border-orange-700 hover:scale-105 text-white rounded-md text-lg  m-1 p-2 w-[100px] "
+        (<button className=" bg-orange-400 border-orange-700 hover:scale-105 text-white rounded-md text-lg p-2  w-[100px] transition-all duration-300 "
           onClick = { () => setIsLoggedIn(false) }>Logout</button>) 
         : 
-        (<button className=" bg-orange-400 text-white rounded-md text-lg  m-1 p-2 w-[100px]"
+        (<button className=" bg-orange-400 text-white rounded-md text-lg p-2 w-[100px] transition-all duration-300"
           onClick = { () => setIsLoggedIn(true)}>Login</button>)
       }
-      
+
+      <button className="  border-orange-400 border-2 hover:scale-105 text-orange-500 rounded-md text-lg p-2  w-[100px] transition-all duration-300">Sign Up</button>
+      </div>
 
       </div>
     );
