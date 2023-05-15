@@ -7,7 +7,7 @@ const Footer =() =>{
     return(
       <>
       <div className="bottom-0  flex flex-col bg-black text-white cursor-pointer overflow-x-hidden">
-           <div className="flex flex-row justify-evenly my-8 ">
+           <div className="flex flex-col md:flex-row justify-evenly my-8 ">
 		           <div className="flex flex-col gap-3 cursor-pointer">
                    <h1 className="font-semibold text-2xl">Company</h1>
                       <ul className="flex flex-col gap-3">
