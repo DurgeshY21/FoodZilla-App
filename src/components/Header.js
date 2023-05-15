@@ -10,7 +10,7 @@ const loggedInUser  = () => {
 export const Title = () => (
     <a href="/">
     <img
-    className="h-[100px]  w-[100px] ml-10"
+    className="h-[100px]  w-[100px] ml-10 "
     alt="logo"
      src="https://play-lh.googleusercontent.com/1mVQadySYUgJmfc3rE096mcQkEGCyia-jvp2foMbUcxUZhlDi4_JCi87D5LPbd594TY"
     />
@@ -26,7 +26,7 @@ export const Title = () => (
     const cartItems = useSelector(store => store.cart.items);
 
     return (
-      <div className="flex justify-between place-items-center bg-white-50 shadow-lg  ">
+      <div className="flex justify-between place-items-center bg-white-50 shadow-lg overflow-x-hidden ">
         <Title/>
       {/* <BrowserRouter> */}
       <div className="nav-items mx-auto">

@@ -40,7 +40,7 @@ const Instamart = () => {
   return (
     <>
       {/* <h1 style={{margin:"20px 500px"}}>Instamart</h1> */}
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center overflow-x-hidden">
       <Section
         title={"About Instamart"}
         description={

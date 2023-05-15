@@ -15,7 +15,7 @@ import React , { useState } from 'react'
   };
 
   return (
-    <div className="w-[700px] p-10  mt-5 mb-5 mx-auto gap-8 rounded-md bg-orange-300 border border-orange-400 h-[600px] flex flex-col justify-center items-center">
+    <div className="w-[700px] p-10  mt-5 mb-5 mx-auto gap-8 rounded-md overflow-x-hidden bg-orange-300 border border-orange-400 h-[600px] flex flex-col justify-center items-center">
       <h1 className='font-semibold text-5xl '>Contact Us</h1>
       <form onSubmit={handleSubmit} className='flex flex-col gap-5 text-lg w-full text-center'>
         <label htmlFor="name">Name:</label>

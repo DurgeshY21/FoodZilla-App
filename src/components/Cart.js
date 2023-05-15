@@ -16,7 +16,7 @@ const Cart = () => {
 
 
     return (
-        <div className="flex flex-col h-[450px]">
+        <div className="flex flex-col h-[450px] overflow-x-hidden">
             {/* <h1 className="font-bold text-3xl"> Cart Items - {cartItems.length}</h1>
             <button className="bg-orange-400 text-white rounded-md p-2 m-4"
             onClick = {()=> handleClearCart()}> Clear Cart</button> */}

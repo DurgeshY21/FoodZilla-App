@@ -55,7 +55,7 @@ const Body = () => {
 return allRestaurants?.length === 0  ? (<Shimmer/> ) :  (
 <>
 {/* Search Bar */}
-      <div className=" flex flex-row search-container p-5 bg-white my-5 items-center justify-center  ">
+      <div className=" flex flex-row search-container p-5 bg-white my-5 items-center justify-center overflow-x-hidden ">
           <input
             type="text"
             className="focus:outline-orange-300 p-3 m-2 text-xl w-[500px] border-solid border-2 border-orange-300 text-slate-300 "

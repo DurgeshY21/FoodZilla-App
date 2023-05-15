@@ -24,7 +24,7 @@ const RestaurantMenu = () => {
     }
    
 return (!restaurant) ? <Shimmer/> :(
-    <div  className="flex flex-col   justify-evenly">
+    <div  className="flex flex-col   justify-evenly overflow-x-hidden">
     
         <div className="flex flex-row bg-orange-300 h-[300px] place-items-center  items-center justify-evenly ">
             <div>
@@ -63,7 +63,7 @@ return (!restaurant) ? <Shimmer/> :(
                              <h2 className="text-sm mt-1 w-[500px]">{card?.card?.info.description}</h2> 
                              <h2 className="font-bold text-sm mt-1">Rs.{card?.card?.info.price/100}</h2>
                              
-                             
+                             <div className="h-0.5 mb-5 w-[800px] bg-gray-200"></div>
                         </div>
 
                        <div>
@@ -71,7 +71,10 @@ return (!restaurant) ? <Shimmer/> :(
                             <button className="px-6 text-white mx-auto  hover:scale-105 duration-800 cursor-pointer bg-green-500 rounded-md"
                             onClick = {() =>  addFoodItem(card)}>  Add</button>
                         </div>
+
+                        
                      </div>
+                    
                      
                 ))}
                 
